@@ -2,7 +2,7 @@
 
 <div align="center">
         
-[![Cypress Test](https://github.com/Mahbub091/cypress_e2e_showcase/actions/workflows/main.yml/badge.svg)](https://github.com/Mahbub091/cypress_e2e_showcase/actions/workflows/main.yml)
+[![Cypress Test](https://github.com/Mahbub091/Test_Repo/actions/workflows/main.yml/badge.svg)](https://github.com/Mahbub091/Test_Repo/actions/workflows/main.yml)
 </div>
 
 <div align="center">
