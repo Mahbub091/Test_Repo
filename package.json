@@ -1,5 +1,5 @@
 {
-	"name": "cypress_e2e_showcase",
+	"name": "test_repo",
 	"version": "1.0.0",
 	"description": "Cypress End-To-End Testing (JS)",
 	"main": "index.js",
@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Mahbub091/cypress_e2e_showcase.git"
+		"url": "https://github.com/Mahbub091/Test_Repo"
 	},
 	"keywords": [
 		"cypress",
@@ -29,7 +29,7 @@
 	"author": "Mahbub091",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/Mahbub091/cypress_e2e_showcase/issues"
+		"url": "https://github.com/Mahbub091/Test_Repo/issues"
 	},
 	"devDependencies": {
 		"@cypress/xpath": "^2.0.3",
@@ -46,6 +46,7 @@
 		"prettier": "^2.7.1"
 	},
 	"dependencies": {
+		"": "file:",
 		"cypress_e2e_showcase": "file:",
 		"cypress-real-events": "^1.7.4",
 		"mocha": "^10.2.0"

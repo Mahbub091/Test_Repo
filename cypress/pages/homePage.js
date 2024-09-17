@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import credUtils from "../support/credentialUtils"
+
 class HomePage {
 	open() {
 		return cy.navigatingToSauceDemo()
@@ -16,6 +18,10 @@ class HomePage {
 	
 	clickOnLoginButton () {
 		return cy.get("input#login-button").should('be.visible').click()
+	}
+
+	validateSuccessLogin () {
+		return cy.validUrl(credUtils.platformName, credUtils.inventoryPage)
 	}
 
 	backpackAddToCartButton () {
@@ -57,6 +63,16 @@ class HomePage {
 	validateProductName () {
 		return cy.get("a#item_4_title_link > .inventory_item_name").should("be.visible").should('have.text', 'Sauce Labs Backpack')
 	}
+
+
+	clickOnFinishButton () {
+		return cy.get(".cart_button").should("be.visible").click()
+	}
+
+
+
+
+	
 
 
 

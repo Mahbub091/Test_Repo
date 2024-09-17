@@ -8,11 +8,11 @@ describe('', () => {
 		homepage.open(credUtils.homePage)
 	})
 
-    it('Logining In to System', () => {
+    it('User Login To SauceDemo Shop', () => {
         homepage.inputUserName(credUtils.username)
         homepage.inputPassword(credUtils.pass)
         homepage.clickOnLoginButton()
-        cy.validUrl(credUtils.platformName, credUtils.inventoryPage)
+        homepage.validateSuccessLogin()
     });
 
     it('Adding Product To Cart & Checkout', () => {
@@ -20,18 +20,16 @@ describe('', () => {
         homepage.clickOnCartButton()
         homepage.validatingItemOnCart()
         homepage.checkoutClick()
-
         homepage.userFirstNameInput(credUtils.firstName)
         homepage.userLastNameInput(credUtils.lastName)
         homepage.userZipCodeInput(credUtils.zipCode)
-
         homepage.clickOnContinueButtonInput()
-
         homepage.validateProductName()
+        homepage.clickOnFinishButton()
 
     });
 
-    it('User Logout from system', () => {
+    it('User Logout from SauceDemo System', () => {
         homepage.clickingOnHamburgerMenu()
         homepage.clickingOnAppReset()
         homepage.clickingOnLogOut()
